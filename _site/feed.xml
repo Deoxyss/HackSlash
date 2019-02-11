@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-02-11T23:39:12+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">HackSlash</title><subtitle>This is a cool website for our group- HackSlash.  The members are Neha Jain, Pallavi Pandey and Bhagyasree Reyyi</subtitle><entry><title type="html">Welcome to HackSlash!</title><link href="http://localhost:4000/update/2018/12/03/Welcome-to-HackSlash.html" rel="alternate" type="text/html" title="Welcome to HackSlash!" /><published>2018-12-03T14:58:20+05:30</published><updated>2018-12-03T14:58:20+05:30</updated><id>http://localhost:4000/update/2018/12/03/Welcome-to-HackSlash</id><content type="html" xml:base="http://localhost:4000/update/2018/12/03/Welcome-to-HackSlash.html">&lt;p&gt;Have a tour of our website !!!&lt;/p&gt;
+
+&lt;p&gt;:) :) :)&lt;/p&gt;</content><author><name></name></author><summary type="html">Have a tour of our website !!!</summary></entry><entry><title type="html">Asg_blog3</title><link href="http://localhost:4000/assignment/blog/page/2018/12/02/Asg_Blog3.html" rel="alternate" type="text/html" title="Asg_blog3" /><published>2018-12-02T00:00:00+05:30</published><updated>2018-12-02T00:00:00+05:30</updated><id>http://localhost:4000/assignment/blog/page/2018/12/02/Asg_Blog3</id><content type="html" xml:base="http://localhost:4000/assignment/blog/page/2018/12/02/Asg_Blog3.html">&lt;h1 id=&quot;assignment-6--question-1&quot;&gt;Assignment-6 , Question-1&lt;/h1&gt;
+
+&lt;h2 id=&quot;question&quot;&gt;Question&lt;/h2&gt;
+&lt;p&gt;Create a canvas in Tkinter. Draw a table of 4 × 4 tiles. Each tile is a square and of equal
+length.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;answer&quot;&gt;Answer&lt;/h2&gt;
+
+&lt;p&gt;The python code for this was:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;#!/usr/bin/env python3
+&lt;/span&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;tkinter&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tk&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;length&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;50&lt;/span&gt; 
+
+&lt;span class=&quot;n&quot;&gt;window&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tk&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Tk&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;window&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Sliding Puzzle&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;window&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;geometry&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;200x200&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;window&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;configure&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'gray'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;#canvas in tkinter
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;canvas&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tk&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Canvas&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;window&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;201&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;201&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;bg&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;gray&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;canvas&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pack&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;side&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tk&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;LEFT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;#creating a table of 4x4 tiles
+&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;length&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;j&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;j&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;length&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;canvas&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;create_rectangle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fill&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;lightgreen&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+
+&lt;span class=&quot;n&quot;&gt;window&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mainloop&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The output obtained was as:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/tk.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;</content><author><name>Bhagyasree</name></author><summary type="html">Assignment-6 , Question-1</summary></entry><entry><title type="html">Asg_blog2</title><link href="http://localhost:4000/assignment/blog/page/2018/12/01/Asg_Blog2.html" rel="alternate" type="text/html" title="Asg_blog2 " /><published>2018-12-01T00:00:00+05:30</published><updated>2018-12-01T00:00:00+05:30</updated><id>http://localhost:4000/assignment/blog/page/2018/12/01/Asg_Blog2</id><content type="html" xml:base="http://localhost:4000/assignment/blog/page/2018/12/01/Asg_Blog2.html">&lt;h1 id=&quot;assignment-2--question-2&quot;&gt;Assignment-2 , Question-2&lt;/h1&gt;
+
+&lt;h2 id=&quot;question&quot;&gt;Question&lt;/h2&gt;
+&lt;p&gt;Find the single shell command that helps you create a blank file without any output redirection.
+Create a file test using the command.  Write a shell script to give
+all possible file permissions to the created file using a loop.  After every change display the result using ‘ ls -l test ’ on the terminal.
+Next run the following command on the file test :
+sudo chattr +i test
+Now rerun you script on test.  Does it work?  You can try out other file operations like mv, rm
+. Find out the reason for this behavior.  Write a brief explanation.  What would you do to make it work again?&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;answer&quot;&gt;Answer&lt;/h2&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;#!/bin/bash&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;#touch creates a new file called test&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;touch test
+
+
+&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;file_name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;test&quot;&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;((&lt;/span&gt; i &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 0&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; i &amp;lt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 7&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; i++ &lt;span class=&quot;o&quot;&gt;))&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;do
+        for&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;((&lt;/span&gt; j &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 0&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; j &amp;lt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 7&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; j++ &lt;span class=&quot;o&quot;&gt;))&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;do
+                for&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;((&lt;/span&gt; k &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 0&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; k &amp;lt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 7&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; k++ &lt;span class=&quot;o&quot;&gt;))&lt;/span&gt;
+                &lt;span class=&quot;k&quot;&gt;do
+                &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;$((&lt;/span&gt;i&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;100&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; j&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;10&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; k&lt;span class=&quot;k&quot;&gt;))&lt;/span&gt;   &lt;span class=&quot;c&quot;&gt;#octal values that change the permissions on the file&lt;/span&gt;
+                &lt;span class=&quot;nb&quot;&gt;echo &lt;/span&gt;0&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$i&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$j&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$k&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+                &lt;span class=&quot;nb&quot;&gt;chmod&lt;/span&gt;  &lt;span class=&quot;nv&quot;&gt;$n&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$file_name&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;    &lt;span class=&quot;c&quot;&gt;#command to give the permission.&lt;/span&gt;
+                &lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;$(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;ls&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-l&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;test&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;)&lt;/span&gt;        &lt;span class=&quot;c&quot;&gt;#displays the permission given to file.&lt;/span&gt;
+                &lt;span class=&quot;nb&quot;&gt;sleep &lt;/span&gt;1
+                &lt;span class=&quot;k&quot;&gt;done
+        done&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The single shell command which creates a blank file without any output redirection is:  touch  and the syntax to create it is:
+touch filename
+sudo chattr +i test
+After running this command on the file test, we get:
+Operation not permitted for every permission
+This makes the file test immutable(unchangeable). chattr (Change Attribute) is a command line Linux utility that is used to set/unset certain attributes to a file in Linux system to secure accidental deletion or modification of important files and folders, even though we are logged in as a root user.
+One cannot delete or modify file/folder once attributes are sets with chattr command, even though one has full permissions on it.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Thus, after trying file operations like mv and rm after this command, it again gives
+Operation not permitted&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;To make it work again, we use the command:
+chattr -i test 
+This is for resetting(unset attribute) permissions and allows to make a files changeable or alterable using -i flag. This will make it mutable again.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;</content><author><name>Neha</name></author><summary type="html">Assignment-2 , Question-2</summary></entry><entry><title type="html">Asg_blog1</title><link href="http://localhost:4000/assignment/blog/page/2018/11/30/Asg_Blog1.html" rel="alternate" type="text/html" title="Asg_blog1" /><published>2018-11-30T00:00:00+05:30</published><updated>2018-11-30T00:00:00+05:30</updated><id>http://localhost:4000/assignment/blog/page/2018/11/30/Asg_Blog1</id><content type="html" xml:base="http://localhost:4000/assignment/blog/page/2018/11/30/Asg_Blog1.html">&lt;h1 id=&quot;assignment-2--question-6&quot;&gt;Assignment-2 , Question-6&lt;/h1&gt;
+
+&lt;h2 id=&quot;question&quot;&gt;Question&lt;/h2&gt;
+&lt;p&gt;Using the idea of bash pipes write a example to illustrate the difference between the commands:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;ls /tmp/ foo&lt;/li&gt;
+  &lt;li&gt;ls /tmp/ foo 2&amp;gt;&amp;amp;1&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;answer&quot;&gt;Answer&lt;/h2&gt;
+&lt;p&gt;By using the ideas of bash pipes, to see the difference between these commands we took the following examples:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;S.No.&lt;/th&gt;
+      &lt;th&gt;Command using bash pipes&lt;/th&gt;
+      &lt;th&gt;Inference&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ls /tmp/ foo | grep &quot;a&quot;&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;Gives &lt;em&gt;STDOUT&lt;/em&gt; of &lt;code class=&quot;highlighter-rouge&quot;&gt;ls /tmp/ foo&lt;/code&gt; to &lt;em&gt;STDIN&lt;/em&gt; of &lt;code class=&quot;highlighter-rouge&quot;&gt;grep &quot;a&quot;&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ls /tmp/ foo 2&amp;gt;&amp;amp;1 | grep &quot;a&quot;&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;The &lt;em&gt;STDERR&lt;/em&gt; portion of the command is sent to &lt;em&gt;STDOUT&lt;/em&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Thus when we pipe to &lt;code class=&quot;highlighter-rouge&quot;&gt;grep &quot;a&quot;&lt;/code&gt; we will see that lines which normally disappear(since they were written to &lt;strong&gt;STDERR&lt;/strong&gt;) are being kept now (because now they are on &lt;strong&gt;STDOUT&lt;/strong&gt;) instead.&lt;/p&gt;
+
+&lt;p&gt;The ouput of these commands are as shown :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/q6.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;</content><author><name>Pallavi</name></author><summary type="html">Assignment-2 , Question-6</summary></entry></feed>
